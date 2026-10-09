@@ -11,17 +11,10 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <p>Facultad de Ingeniería · Centro Universitario de Retalhuleu</p>
-      <a href="tel:+50212345678">+502 1234 5678</a>
-    </div>
-  </div>
-
   <header class="site-header" id="header">
     <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Inicio">
-        <span class="brand-seal" aria-hidden="true">UMG</span>
+      <a class="brand" href="#inicio">
+        <img class="brand-logo" src="img/logo-umg.png" alt="Universidad Mariano Gálvez de Guatemala">
         <span class="brand-text">
           <strong>XIV Convención</strong>
           <small>Ciencia y Tecnología</small>
@@ -34,31 +27,22 @@
       </button>
 
       <nav class="nav" id="nav-principal">
-        <a href="#convencion">La convención</a>
         <a href="#ponentes">Ponentes</a>
-        <a href="#ejes">Ejes</a>
         <a href="#lugar">Lugar</a>
-        <a href="#registro">Contacto</a>
-        <a class="btn btn-nav" href="#registro">Registrarse</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero" id="inicio">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <source src="video%20sin%20texto.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="container hero-content">
-        <p class="eyebrow">Universidad Mariano Gálvez de Guatemala</p>
-        <h1>
-          XIV Convención de<br>
-          <span>Ciencia y Tecnología</span>
-        </h1>
-        <p class="hero-subtitle">Título de la convención</p>
-        <p class="hero-topics">Ciencia · Tecnología · Ingeniería · Coding &amp; Programming</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#registro">Registrarse</a>
-          <a class="btn btn-ghost" href="#ponentes">Ver ponentes</a>
-        </div>
+        <p class="eyebrow">XIV Convención de Ciencia y Tecnología</p>
+        <h1>Más allá del Código: construyendo una carrera en tecnología.</h1>
       </div>
     </section>
 
@@ -109,7 +93,7 @@
         </div>
         <aside class="edition-panel">
           <p class="panel-label">Información del evento</p>
-          <h3>Título de la convención</h3>
+          <h3>Más allá del Código: construyendo una carrera en tecnología.</h3>
           <p>Coding &amp; Programming como tema central de las tres ponencias de esta edición.</p>
           <a class="btn btn-primary" href="#registro">Quiero asistir</a>
         </aside>
