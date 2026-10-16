@@ -193,12 +193,20 @@ p { margin: 0 0 0.8rem; }
   background: transparent;
 }
 
-.btn-nav {
+.nav a.btn-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: var(--cyan);
-  color: #04203a !important;
+  color: #04203a;
   padding: 0.55rem 1rem;
   border-radius: 999px;
   font-weight: 700;
+}
+
+.nav a.btn-nav:hover {
+  color: #04203a;
+  filter: brightness(1.08);
 }
 
 .hero {
@@ -434,6 +442,16 @@ p { margin: 0 0 0.8rem; }
   border-radius: 50%;
   background: #19c6ff;
   box-shadow: 0 0 10px #19c6ff;
+}
+
+.countdown-started {
+  margin: 1.25rem 0 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  font-size: clamp(1.25rem, 3vw, 1.85rem);
+  color: #19c6ff;
+  text-shadow: 0 0 18px rgba(25, 198, 255, 0.55);
 }
 
 .flip-clock {
@@ -790,7 +808,20 @@ p { margin: 0 0 0.8rem; }
 }
 
 .register-cta .btn {
-  margin-top: 0.4rem;
+  margin-top: 0.6rem;
+  min-height: 52px;
+  padding: 0.85rem 1.45rem;
+  font-size: 1.02rem;
+}
+
+.register-cta .btn-whatsapp {
+  background: #25d366;
+  color: #04203a;
+}
+
+.register-cta .btn-whatsapp:hover {
+  background: #1ebe5a;
+  filter: none;
 }
 
 .register-form label {
@@ -873,6 +904,7 @@ p { margin: 0 0 0.8rem; }
 }
 
 .socials .social {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;

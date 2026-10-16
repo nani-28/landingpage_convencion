@@ -6,6 +6,8 @@ function iniciarCuentaRegresiva() {
   if (!etiqueta || pares.some((par) => !par)) return;
 
   const evento = new Date("2026-10-24T08:00:00-06:00");
+  const aviso = document.getElementById("countdown-started");
+  let reloj;
 
   function ponerPar(par, valor) {
     const texto = String(Math.max(0, valor)).padStart(2, "0").slice(-2);
@@ -19,6 +21,8 @@ function iniciarCuentaRegresiva() {
     if (restante <= 0) {
       etiqueta.textContent = "La convención ya comenzó";
       pares.forEach((par) => ponerPar(par, 0));
+      if (aviso) aviso.hidden = false;
+      clearInterval(reloj);
       return;
     }
 
@@ -30,7 +34,9 @@ function iniciarCuentaRegresiva() {
   }
 
   actualizar();
-  setInterval(actualizar, 1000);
+  if (evento.getTime() - Date.now() > 0) {
+    reloj = setInterval(actualizar, 1000);
+  }
 }
 
 iniciarCuentaRegresiva();
